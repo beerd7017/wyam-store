@@ -3,10 +3,10 @@
 	<channel>
 		<title>WyamStore</title>
 		<link>http://localhost/</link>
-		<description>An example eCommerce Site built on [Wyam](https://wyam.io/)!</description>
+		<description>An example eCommerce Site built on Wyam!</description>
 		<copyright>2018</copyright>
-		<pubDate>Sun, 28 Jan 2018 11:16:13 GMT</pubDate>
-		<lastBuildDate>Sun, 28 Jan 2018 11:16:13 GMT</lastBuildDate>
+		<pubDate>Sun, 28 Jan 2018 11:24:28 GMT</pubDate>
+		<lastBuildDate>Sun, 28 Jan 2018 11:24:28 GMT</lastBuildDate>
 		<item>
 			<title>First Post</title>
 			<link>http://localhost/posts/first-post</link>

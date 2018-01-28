@@ -4,8 +4,8 @@
 	<id>http://localhost/</id>
 	<title>WyamStore</title>
 	<rights>2018</rights>
-	<updated>2018-01-28T11:16:13Z</updated>
-	<subtitle>An example eCommerce Site built on [Wyam](https://wyam.io/)!</subtitle>
+	<updated>2018-01-28T11:24:28Z</updated>
+	<subtitle>An example eCommerce Site built on Wyam!</subtitle>
 	<entry>
 		<link href="http://localhost/posts/first-post" />
 		<id>http://localhost/posts/first-post</id>

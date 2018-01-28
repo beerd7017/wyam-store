@@ -4,6 +4,6 @@
 // Customize your settings and add new ones here
 Settings[Keys.Host] = "localhost";
 Settings[BlogKeys.Title] = "WyamStore";
-Settings[BlogKeys.Description] = "An example eCommerce Site built on Wyam!"
+Settings[BlogKeys.Description] = "An example eCommerce Site built on Wyam!";
 
 // Add any pipeline customizations here
