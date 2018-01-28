@@ -2,8 +2,8 @@
 #t SolidState
 
 // Customize your settings and add new ones here
-Settings[Keys.Host] = "host.com";
-Settings[BlogKeys.Title] = "My Blog";
-Settings[BlogKeys.Description] = "Welcome!";
+Settings[Keys.Host] = "localhost";
+Settings[BlogKeys.Title] = "WyamStore";
+Settings[BlogKeys.Description] = "An example eCommerce Site built on Wyam!"
 
 // Add any pipeline customizations here
