@@ -1,4 +1,4 @@
-# Welcome to the WyamStore
+# Welcome to the WyamStore repository!
 
 ## Purpose
 This repository is an example of an e-Commerce store built using [Wyam](https://wyam.io/), a static content generator and toolkit.
