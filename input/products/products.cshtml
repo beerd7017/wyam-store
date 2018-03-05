@@ -1,0 +1,22 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+
+<h2>@Metadata["Name"]</h2>
+
+<div class="product-details">
+    <img src="@Metadata["Image"]" width="150px" class="thumbnail"/>
+    <div class="product-description">
+        <p>
+            @Html.Raw(Metadata["Product"])
+        </p>
+
+        <button class="snipcart-add-item"
+                data-item-name="@Metadata["Name"]"
+                data-item-description="@Metadata["Description"]"
+                data-item-id="@Metadata["Sku"]"
+                data-item-image="@Metadata["Image"]"
+                data-item-price="@Metadata["Price"]">
+            Buy it for @Metadata["Price"] $
+        </button>
+    </div>
+</div>

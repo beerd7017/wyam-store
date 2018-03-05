@@ -1,9 +1,39 @@
-#recipe Blog
-#t SolidState
+#n -p Wyam.Yaml
+#n -p Wyam.Razor
+#n -p Wyam.Markdown
 
-// Customize your settings and add new ones here
-Settings[Keys.Host] = "localhost";
-Settings[BlogKeys.Title] = "WyamStore";
-Settings[BlogKeys.Description] = "An example eCommerce Site built on Wyam!";
+Pipelines.Add("Products",
+    ReadFiles("products/*.md"),  // Read all markdown files in the "products" directory
+    FrontMatter(Yaml()),  // Load any frontmatter and parse it as YAML markup
+    Markdown(),  // Render the markdown content
+    Meta("Product", @doc.Content),  // Move the markdown content to metadata
+    Meta("ProductFile", string.Format(@"products\{0}.html", ((string)@doc["Title"]).ToLower().Replace(' ', '-'))),  // Use the product title as the filename and save it in metadata so we can use it in links later
+    Merge(
+        ReadFiles("products/products.cshtml")  // Load the Razor product page template
+    ),
+    Razor(),  // Compile and render the page template
+    WriteFiles((string)@doc["ProductFile"])  // Write the product file
+);
 
-// Add any pipeline customizations here
+Pipelines.Add("About",
+    ReadFiles("about/about.md"),
+    FrontMatter(Yaml()),
+    Markdown(),
+    Meta("About", @doc.Content),
+    Meta("AboutFile", string.Format(@"about\about.html", ((string)@doc["Title"]).ToLower().Replace(' ', '-'))),
+    Merge(
+        ReadFiles("about/about.cshtml")
+        ),
+        Razor(),
+    WriteFiles((string)@doc["AboutFile"])
+);
+
+Pipelines.Add("Home",
+    ReadFiles("{!_,}*.cshtml"),
+    Razor(),
+    WriteFiles(".html")
+);
+
+Pipelines.Add("Resources",
+	CopyFiles("**/*{!.cshtml,!.md,!.yaml,}")
+);
