@@ -6,4 +6,4 @@ Price: 599.00
 Sku: MM50E
 Title: Epiphone MM50E Profesional Electric Mandonlin In Natural
 ---
-The Epiphone MM50 Mandolin offers a professional solution to live mandolin playing. With a new and highly versatile pickup system, this mandolin is optimised for both its acoustic and electric tone. The Shadow pickup system is fully adjustable and can be moved to better suit your playing style, or to simply alter your amplified tone. Never before has a mandolin sounded so good in a live environment!1
+The Epiphone MM50 Mandolin offers a professional solution to live mandolin playing. With a new and highly versatile pickup system, this mandolin is optimised for both its acoustic and electric tone. The Shadow pickup system is fully adjustable and can be moved to better suit your playing style, or to simply alter your amplified tone. Never before has a mandolin sounded so good in a live environment!
