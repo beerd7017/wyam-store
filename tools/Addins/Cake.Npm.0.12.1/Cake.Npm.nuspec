@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Cake.Npm</id>
+    <version>0.12.1</version>
+    <authors>Phil Oyston, Pascal Berger, Cake-Contrib</authors>
+    <owners>Phil Oyston, Pascal Berger, Cake-Contrib</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/cake-contrib/cake-npm/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/cake-contrib/cake-npm</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <description>A set of aliases for Cake to help with running Npm (Node Package Manager) commands</description>
+    <tags>cake npm cake-build cake-contrib</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6" />
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
