@@ -22,3 +22,15 @@ Alternatively, you can simpily execute the PowerShell script: `build.ps1`.
 
 ### Production Mode
 `wyam build`
+
+## Contributing
+
+1. Add your contribution to a new branch named `<username>/<feature-name>`
+2. Install the latest versions of npm, node, gatsby 
+3. You can start the application from the command line with `gatsby develop`. Be sure to test your changes before submitting a pull request.
+4. Submit a Pull Request.
+5. Profit.
+
+## Have an Issue or Request?
+
+Submit an Issue or Request above. Please also be sure to tag the issue type.
