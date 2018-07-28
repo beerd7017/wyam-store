@@ -2,3 +2,4 @@
 .idea/
 WyamSite.sln
 output/*
+input/node_modules
